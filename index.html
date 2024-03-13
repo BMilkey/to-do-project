@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <script type="module" src="/main.js"></script>
+    <script>
+
+    </script>
+    <div class="container">
+
+      <div class="row" id="title">
+        <h1>My To Do</h1>
+      </div>
+
+      <div class="row">
+
+        <input class="col-md-11" id="inputNameTask" type="text" placeholder="No more than 50 symbols...">
+
+        <div class="col-md-1 text-center">
+          <span onclick="newTask()" class="addButton">Add</span>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6" id="priority">
+          <h3>Priority tasks</h3>
+          <ul>
+
+          </ul>
+        </div>
+
+        <div class="col-md-6" id="other">
+          <h3>Other tasks</h3>
+          <ul id="mainSpace">
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
